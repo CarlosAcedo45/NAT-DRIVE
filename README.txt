@@ -1,3 +1,1 @@
-Code Authors: Jose C. Acedo, Sabbir Ahmed. 
-
-NAT-DRIVE Radar and GPS data processing, and Car-Following model calibration 
+NAT-DRIVE: A Novel Approach for Collecting and Validating Naturalistic Car-Following Data
