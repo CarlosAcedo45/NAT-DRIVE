@@ -11,15 +11,15 @@ The Car-Following Data Processing.ipynb code was developed to extract the desire
 
 Racebox GPS provides a csv file with the following recorded data:
 - Record: 	Recorded element number as an integer staring from 1
-- Time: 	Time of the reading in yyyy/mm/dd, hh:mm:ss.000 format
+- Time: 	  Time of the reading in yyyy/mm/dd, hh:mm:ss.000 format
 - Latitude
 - Longitude
 - Altitude
-- Speed: 	driven vehicle's speed, units depend on the user's desired setting.
+- Speed: 	  driven vehicle's speed, units depend on the user's desired setting.
 - GForce X:	Accelerometer's forces experienced in the X axis measured in G's.
 - GForce Y:	''' in the Y axis '''
 - GForce Z:	''' in the Z axis '''
 - Lap
-- Gyro X:	Gyroscope reading on X axis in Deg.
-- Gyro Y:	''' on Y axis in Deg.
-- Gyro Z:	''' on Z axis in Deg.
+- Gyro X:	  Gyroscope reading on X axis in Deg.
+- Gyro Y:	  ''' on Y axis in Deg.
+- Gyro Z:	  ''' on Z axis in Deg.
