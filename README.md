@@ -7,7 +7,6 @@ This repository contains the Python and MATLAB implementation for the following 
 
 
 **NAT-DRIVE: A Novel Approach for Collecting and  Validating Naturalistic Car-Following Data**
-
 Jose Carlos Acedo Aguilar, Sabbir Ahmned, Davi V. Q. Rodrigues, Mingfeng Shang, Shian Wang
 
 ## Overview
