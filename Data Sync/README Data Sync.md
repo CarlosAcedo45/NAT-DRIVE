@@ -11,7 +11,7 @@ For synchronization purposes, the authors of this work recorded multiple runs st
 
 In return, the code slices the corresponding Leader's data based on the time of the processed radar data. Additionally, the data is shifted in time based on the specified time offset between GPS and Radar data.
 
-The "Car-Following Data Processing.ipynb" code was developed to extract the desired data from the Racebox GPS sensor. 
+The "Car_Following_Data_Processing.ipynb" code was developed to extract the desired data from the Racebox GPS sensor. 
 
 Racebox GPS provides a csv file with the following recorded data:
 - Record: 	Recorded element number as an integer staring from 1
