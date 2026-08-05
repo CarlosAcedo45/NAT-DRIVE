@@ -14,7 +14,7 @@ display = true;
 save = false;
 
 %% -------- LEADER DATA -------- 
-Leader_Data = readtable('Data\El Paso\OscillationsV2.csv', VariableNamingRule='preserve');
+Leader_Data = readtable('Data/Oscillations.csv', VariableNamingRule='preserve');
 leader.x = table2array(Leader_Data(:,2));
 leader.v = table2array(Leader_Data(:,3));
 leader.a = table2array(Leader_Data(:,4));
@@ -28,18 +28,16 @@ l = 5;
 %% ------- CALIBRATION ---------
 % Racebox data synchronized to Radar => 
 % [index, Time, Latitude, Longitude, Position, Speed, Acceleration]
-file_speedProf = 'Data/El Paso/Mesa-Sync_EV_Follower1_data_V2 10-04.csv';
-% file_speedProf = 'Data/El Paso/Mesa-Sync_ICE_Follower1_data 12-43.csv';
-% file_speedProf = 'Data/El Paso/I10-Sync_EV_Follower2_data 13-14.csv';
-% file_speedProf = 'Data/El Paso/I10-Sync_EV_Follower2_data 13-14.csv';
+file_speedProf = 'Data/Mesa-Sync_EV_Follower1_data_V2 10-04.csv';
+% file_speedProf = 'Data/Mesa-Sync_ICE_Follower1_data 12-43.csv';
+% file_speedProf = 'Data/I10-Sync_EV_Follower2_data 13-14.csv';
 
 % Radar data file => 
 % [index_org, index_zeroed, elapsed_Time, Timestamp, range_raw, velocity_raw,
 % range_kf, velocity_kf, acceleration_kf, mahalanobis, kf_update_acepted]
-file_follower = 'Data/El Paso/Mesa_2_KF_Final_Rep_Removed.csv';
-% file_follower = 'Data/El Paso/Mesa_8_KF_Final_Rep_Removed.csv';
-% file_follower = 'Data/El Paso/I10_SecondVeh_Smoothed_June17.csv';
-% file_follower = 'Data/El Paso/I10_SecondVeh_Smoothed_June17.csv';
+file_follower = 'Data/Mesa_2_KF_Final_Rep_Removed.csv';
+% file_follower = 'Data/Mesa_8_KF_Final_Rep_Removed.csv';
+% file_follower = 'Data/I10_SecondVeh_Smoothed_June17.csv';
 
 [IDM_Param, OVRV_Param, AOVRV_Param] = All_Models_Calibration(file_speedProf, file_follower, false, false);
 

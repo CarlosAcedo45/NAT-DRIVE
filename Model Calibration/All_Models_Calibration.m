@@ -37,9 +37,9 @@ function [IDM_Param, OVRV_Param, AOVRV_Param] = All_Models_Calibration(file_lead
     
     %% ----------- PARAMETERS AND STATES -------------
     
-    IDM_Results = IDM_Calibration_V1(Delta, l, leader, follower, s_real);
-    OVRV_Results = OVRV_Calibration_V1(Delta, l, leader, follower, s_real);
-    AOVRV_Results = AOVRV_Calibration_V1(Delta, l, leader, follower, s_real);
+    IDM_Results = IDM_Calibration(Delta, l, leader, follower, s_real);
+    OVRV_Results = OVRV_Calibration(Delta, l, leader, follower, s_real);
+    AOVRV_Results = AOVRV_Calibration(Delta, l, leader, follower, s_real);
 
     IDM_Param = IDM_Results.Opt_Param;
     OVRV_Param = OVRV_Results.Opt_Param;

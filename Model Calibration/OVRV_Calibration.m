@@ -1,4 +1,4 @@
-function Results = OVRV_Calibration_V1(Delta, l, leader, follower, s_real)
+function Results = OVRV_Calibration(Delta, l, leader, follower, s_real)
     %% ----------- INITIAL DATA AND PARAMETERS ----------
 
     Results = struct();
